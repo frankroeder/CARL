@@ -93,6 +93,7 @@ if found:
 found = check_spec("dm_control")
 if found:
     from carl.envs.dmc import (
+        CARLDmcBallInCupEnv,
         CARLDmcFingerEnv,
         CARLDmcFishEnv,
         CARLDmcQuadrupedEnv,
@@ -100,6 +101,7 @@ if found:
     )
 
     __all__ += [
+        "CARLDmcBallInCupEnv",
         "CARLDmcFingerEnv",
         "CARLDmcFishEnv",
         "CARLDmcQuadrupedEnv",
