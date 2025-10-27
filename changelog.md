@@ -1,3 +1,6 @@
+# 1.2.0
+- add DMC ball_in_cup env
+
 # 1.1.0
 - increased test coverage
 - smaller bug fixes
