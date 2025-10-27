@@ -55,18 +55,18 @@ def update_physics(xml_string: bytes, context: Context) -> bytes:
         gravity = " ".join([g[0], g[1], str(-context["gravity"])])
     option.set("gravity", gravity)
 
-    # Update distance cup - ball by moving ball position and tendon length
+    # Update string_length cup - ball by moving ball position and tendon length
     tendon = mjcf.find("./tendon/spatial")
     assert tendon is not None
-    default_distance = float(tendon.get("range").split(" ")[1])
-    delta_distance = default_distance - context["distance"]
-    distance = " ".join(["0", str(context["distance"])])
-    tendon.set("range", distance)
+    default_string_length = float(tendon.get("range").split(" ")[1])
+    delta_string_length = default_string_length - context["string_length"]
+    string_length = " ".join(["0", str(context["string_length"])])
+    tendon.set("range", string_length)
     bodies = mjcf.findall("./worldbody/body")
     for body in bodies:
         if body.get("name") == "ball":
             p = body.get("pos").split(" ")
-            pos = " ".join([p[0], p[1], str(float(p[2]) + delta_distance)])
+            pos = " ".join([p[0], p[1], str(float(p[2]) + delta_string_length)])
             body.set("pos", pos)
 
     xml_string = etree.tostring(mjcf, pretty_print=True)

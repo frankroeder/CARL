@@ -15,7 +15,7 @@ class CARLDmcBallInCupEnv(CARLDmcEnv):
             "gravity": UniformFloatContextFeature(
                 "gravity", lower=0.1, upper=np.inf, default_value=9.81
             ),
-            "distance": UniformFloatContextFeature(
-                "distance", lower=0, upper=np.inf, default_value=0.3
+            "string_length": UniformFloatContextFeature(
+                "string_length", lower=0, upper=np.inf, default_value=0.3
             ),
         }
