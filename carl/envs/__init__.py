@@ -93,18 +93,36 @@ if found:
 found = check_spec("dm_control")
 if found:
     from carl.envs.dmc import (
+        CARLDmcAcrobotEnv,
         CARLDmcBallInCupEnv,
+        CARLDmcCartpoleEnv,
+        CARLDmcCheetahEnv,
         CARLDmcFingerEnv,
         CARLDmcFishEnv,
+        CARLDmcHopperEnv,
+        CARLDmcHumanoidEnv,
+        CARLDmcManipulatorEnv,
+        CARLDmcPendulumEnv,
         CARLDmcQuadrupedEnv,
+        CARLDmcReacherEnv,
+        CARLDmcSwimmerEnv,
         CARLDmcWalkerEnv,
     )
 
     __all__ += [
+        "CARLDmcAcrobotEnv",
         "CARLDmcBallInCupEnv",
+        "CARLDmcCartpoleEnv",
+        "CARLDmcCheetahEnv",
         "CARLDmcFingerEnv",
         "CARLDmcFishEnv",
+        "CARLDmcHopperEnv",
+        "CARLDmcHumanoidEnv",
+        "CARLDmcManipulatorEnv",
+        "CARLDmcPendulumEnv",
         "CARLDmcQuadrupedEnv",
+        "CARLDmcReacherEnv",
+        "CARLDmcSwimmerEnv",
         "CARLDmcWalkerEnv",
     ]
 

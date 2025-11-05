@@ -1,5 +1,14 @@
 # 1.2.0
-- add DMC ball_in_cup env
+- added DMC ball_in_cup env
+- added DMC hopper env
+- added DMC acrobot env
+- added DMC cheetah env
+- added DMC pendulum env
+- added DMC humanoid env
+- added DMC cartpole env
+- added DMC reacher env
+- added DMC swimmer env
+- added DMC manipulator env
 
 # 1.1.0
 - increased test coverage

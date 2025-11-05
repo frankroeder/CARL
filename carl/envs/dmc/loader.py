@@ -6,11 +6,20 @@ import dm_env  # type: ignore
 from dm_control import suite  # type: ignore
 
 from carl.envs.dmc.dmc_tasks import (  # type: ignore [import]  # noqa: F401
+    acrobot,
     ball_in_cup,
+    cartpole,
+    cheetah,
     finger,
     fish,
+    hopper,
+    humanoid,
+    manipulator,
+    pendulum,
     pointmass,
     quadruped,
+    reacher,
+    swimmer,
     walker,
 )
 from carl.utils.types import Context
